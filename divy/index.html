@@ -7,6 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+
+<!-- *dotyczy wszystkiego na stronie -->
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
     /* margin - margines na zewnatrz, padding - margines wewnatrz, box sizing: border-box (padding nie wplywa na diva*/
        body > div{
         box-sizing: border-box;    
@@ -17,6 +25,19 @@
         border: 4px solid black;
         background: rebeccapurple;
 
+        }
+
+        /* div wszystkie divy tak wygladaja
+        body div - tylko te w tagu body
+        body > div - dzieci tagu body */
+
+
+        div > div {
+            box-sizing: border-box;
+            height: 100px;
+            width: 100px;
+            background: rgb(255, 255, 255);
+            border-radius: 50%;
         }
 
     </style>
